@@ -1,5 +1,9 @@
 /* Start Global */
 
+:root {
+  --bg-color: #f1f5f9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -91,7 +95,7 @@ ul {
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
   background-color: #f6f6f6;
-  background-color: #f1f5f9;
+  background-color: var(--bg-color);
 }
 
 .sidebar ul li a span {
