@@ -2,6 +2,12 @@
 
 :root {
   --bg-color: #f1f5f9;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 
 * {
@@ -127,5 +133,97 @@ ul {
 /* * ---------- * */
 
 /* End Sidebar */
+
+/* Start Content*/
+
+.page .content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .head {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .head .search {
+  position: relative;
+}
+
+.content .head .search::before {
+  font-family: "Font Awesome 6 Free";
+  /* font-family: var(--fa-style-family-classic); SAME*/
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.content .head .search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
+}
+
+.content .head .search input:focus {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .content .head .search input:focus {
+    width: 190px;
+  }
+}
+
+.content .head .search input:focus::placeholder {
+  opacity: 0;
+}
+
+.content .icons {
+  display: flex;
+  align-items: center;
+}
+
+.content .icons .notification {
+  position: relative;
+}
+
+.content .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  right: -3.5px;
+  top: -5px;
+}
+
+.content .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+  border-radius: 20%;
+  cursor: pointer;
+  filter: saturate(0.4);
+  transition: 0.2s;
+}
+
+.content .icons img:hover {
+  filter: saturate(1);
+}
+
+/* End Content*/
 
 /* End Page */
