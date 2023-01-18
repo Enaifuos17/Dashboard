@@ -661,7 +661,92 @@ ul {
 
 /* Start Tickets Stats */
 
+.wrapper .tickets-stats {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .tickets-stats h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wrapper .tickets-stats p {
+  color: var(--grey-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.wrapper .tickets-stats > div {
+  /* border: 1px solid green; */
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.wrapper .tickets-stats div div.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--grey-color);
+  width: calc(
+    50% - 10px
+  ); /* 10px => hitash gap 20px so ghadi n9ssu 10px mn jiha o 10px mn jiha khra => bash ykun two elements f line (50% 50%) */
+}
+
+/* * ---------- * */
+@media (max-width: 767px) {
+  .wrapper .tickets-stats div div.box {
+    width: 100%;
+  }
+}
+/* * ---------- * */
+
+.wrapper .tickets-stats div i {
+  margin-bottom: 10px;
+}
+
+.wrapper .tickets-stats div i.orange {
+  color: var(--orange-color);
+}
+
+.wrapper .tickets-stats div i.blue {
+  color: var(--blue-color);
+}
+
+.wrapper .tickets-stats div i.green {
+  color: var(--green-color);
+}
+
+.wrapper .tickets-stats div i.red {
+  color: var(--red-color);
+}
+
+.wrapper .tickets-stats div span {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
 /* End Tickets Stats */
+
+/* * ---------------------------- * */
+
+/* Start Latest News */
+
+.wrapper .latest-news {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* End Latest News */
 
 /* * ---------------------------- * */
 
