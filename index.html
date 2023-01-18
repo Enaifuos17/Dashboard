@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="page">
-      <!--  start sidebar -->
+      <!-- Start Sidebar -->
       <div class="sidebar">
         <h3>Usrnm</h3>
         <ul>
@@ -79,11 +79,11 @@
           </li>
         </ul>
       </div>
-      <!-- end sidebar -->
-      <!-- --------------------------------------- -->
-      <!-- start content -->
+      <!-- End sidebar -->
+      <!-- ----- ----- ----- ----- ----- ----- ----- -->
+      <!-- Start Content -->
       <div class="content">
-        <!-- start head -->
+        <!-- Start Head -->
         <div class="head">
           <div class="search">
             <input type="search" placeholder="Type A Keyword" />
@@ -102,12 +102,14 @@
             </a>
           </div>
         </div>
-        <!-- end head -->
-        <!-- start h1 title  -->
+        <!-- End Head -->
+        <!-- * ----------------- * -->
+        <!-- h1 title -->
         <h1>Dashboard</h1>
-        <!-- end h1 title -->
-        <!-- start wrapper -->
+        <!-- * ----------------- * -->
+        <!-- Start Wrapper -->
         <div class="wrapper">
+          <!-- Start Welcome -->
           <div class="welcome">
             <!-- intro -->
             <div class="intro">
@@ -128,13 +130,95 @@
             <!-- button visit profile -->
             <a href="profile.html" class="visit-profile">Profile</a>
           </div>
+          <!-- End Welcome -->
+          <!-- * ----------------- * -->
+          <!-- Start Quick Draft -->
+          <div class="quick-draft">
+            <h2>Quick Draft</h2>
+            <p>Write A Draft For Your Ideas</p>
+            <form action="">
+              <input type="text" placeholder="Title" />
+              <textarea placeholder="Your Thought"></textarea>
+              <input class="save" type="submit" value="Save" />
+            </form>
+          </div>
+          <!-- End Quick Draft -->
+          <!-- * ----------------- * -->
+          <!-- Start Yearly Targets -->
+          <div class="yearly-targets">
+            <h2>Yearly Targets</h2>
+            <p>Targets Of The Year</p>
+            <!-- target row blue -->
+            <div class="target-row money-blue">
+              <!-- icon -->
+              <div class="icon">
+                <i class="fa-solid fa-dollar-sign fa-lg"></i>
+              </div>
+              <!-- details -->
+              <div class="details">
+                <span class="title">Money</span>
+                <span class="number">$20.000</span>
+                <!-- progress -->
+                <div class="progress">
+                  <span class="first-span blue" style="width: 0%">
+                    <span>80%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- target row orange -->
+            <div class="target-row projects-orange">
+              <!-- icon -->
+              <div class="icon">
+                <i class="fa-solid fa-code fa-lg"></i>
+              </div>
+              <!-- details -->
+              <div class="details">
+                <span class="title">Projects</span>
+                <span class="number">24</span>
+                <!-- progress -->
+                <div class="progress">
+                  <span class="first-span orange" style="width: 0%">
+                    <span>55%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- target row green -->
+            <div class="target-row team-green">
+              <!-- icon -->
+              <div class="icon">
+                <i class="fa-solid fa-user fa-lg"></i>
+              </div>
+              <!-- details -->
+              <div class="details">
+                <span class="title">Team</span>
+                <span class="number">12</span>
+                <!-- progress -->
+                <div class="progress">
+                  <span class="first-span green" style="width: 0%">
+                    <span>75%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- * ----------------- * -->
+          <div class="tickets-stats"></div>
+          <!-- End Yearly Targets -->
         </div>
-        <!-- end wrapper -->
+        <!-- End Wrapper -->
       </div>
-      <!-- end content -->
+      <!-- End Content -->
     </div>
+    <!-- ----- ----- ----- ----- ----- ----- ----- -->
+    <!-- Start Scrolling Button -->
+    <button id="scrollBttn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- End Scrolling Button -->
     <!-- -->
-    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
 <!-- 

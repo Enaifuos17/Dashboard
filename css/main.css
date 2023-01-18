@@ -15,8 +15,9 @@
 }
 
 body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  /* height: 3000px; */
 }
 
 *:focus {
@@ -53,7 +54,7 @@ ul {
 
 /* * ---------------------------- * */
 
-/* Start Page */
+/* Start Page ==> Sidebar + Content */
 
 .page {
   min-height: 100vh;
@@ -61,7 +62,7 @@ ul {
   display: flex;
 }
 
-/* * Start Sidebar */
+/* Start Sidebar */
 
 .page .sidebar {
   background-color: #fff;
@@ -149,14 +150,18 @@ ul {
 }
 /* * ---------- * */
 
-/* * End Sidebar */
+/* End Sidebar */
 
-/* * Start Content*/
+/* * ---------------------------- * */
+
+/* Start Content ==> Head + Wrapper */
 
 .page .content {
   width: 100%;
   overflow: hidden;
 }
+
+/* Start Head */
 
 .page .content .head {
   background-color: #fff;
@@ -172,7 +177,7 @@ ul {
 
 .page .content .head .search::before {
   font-family: "Font Awesome 6 Free";
-  /* font-family: var(--fa-style-family-classic); SAME*/
+  /* font-family: var(--fa-style-family-classic); SAME */
   content: "\f002";
   font-weight: 900;
   position: absolute;
@@ -243,6 +248,12 @@ ul {
   filter: saturate(1);
 }
 
+/* End Head */
+
+/* * ---------------------------- * */
+
+/* Start H1 */
+
 .page .content h1 {
   margin: 20px 20px 40px;
   position: relative;
@@ -267,9 +278,15 @@ ul {
   width: 40px;
 }
 
-/* * End Content*/
+/* End H1 */
 
-/* * Start Wrapper */
+/* * ---------------------------- * */
+
+/* Start Wrapper ==> Welcome + Quick Draft + Yearly Targets +  */
+
+.content .wrapper > div {
+  border: 1px solid black;
+}
 
 .content .wrapper {
   border: 1px solid red;
@@ -308,7 +325,6 @@ ul {
 /* * ---------- * */
 
 /* intro */
-
 .wrapper .welcome .intro {
   padding: 20px;
   display: flex;
@@ -331,7 +347,6 @@ ul {
 }
 
 /* avatar */
-
 .wrapper .welcome img#avatar {
   width: 64px;
   height: 64px;
@@ -344,7 +359,6 @@ ul {
 }
 
 /* body */
-
 .wrapper .welcome .body {
   text-align: center;
   display: flex;
@@ -391,7 +405,6 @@ ul {
 }
 
 /* visit profile link */
-
 .wrapper .welcome .visit-profile {
   display: block;
   font-size: 14px;
@@ -410,6 +423,285 @@ ul {
 
 /* End Welcome */
 
-/* * End Wrapper */
+/* * ---------------------------- * */
+
+/* Start Quick Draft */
+
+.wrapper .quick-draft {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .quick-draft h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wrapper .quick-draft p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--grey-color);
+  font-size: 15px;
+}
+
+/* input => title */
+.wrapper .quick-draft form input:first-child {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+.wrapper .quick-draft form textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 180px;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-radius: 6px;
+  resize: none;
+}
+
+.wrapper .quick-draft form input.save {
+  display: block;
+  font-size: 14px;
+  background-color: var(--blue-color);
+  color: #fff;
+  border: none;
+  width: fit-content;
+  transition: 0.3s;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: auto; /* to go left */
+}
+
+.wrapper .quick-draft form input.save:hover {
+  background-color: var(--blue-alt-color);
+}
+
+/* End Quick Draft */
+
+/* * ---------------------------- * */
+
+/* Start Yearly Targets */
+
+.wrapper .yearly-targets {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.wrapper .yearly-targets h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wrapper .yearly-targets p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--grey-color);
+  font-size: 15px;
+}
+
+.wrapper .yearly-targets .target-row {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.wrapper .yearly-targets .target-row .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid green; */
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.wrapper .yearly-targets .target-row .details {
+  flex: 1;
+}
+
+.wrapper .yearly-targets .target-row .details span.title {
+  color: var(--grey-color);
+  font-size: 14px;
+}
+
+.wrapper .yearly-targets .target-row .details span.number {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.wrapper .yearly-targets .target-row .details .progress {
+  height: 4px;
+  position: relative;
+}
+
+/* direct span */
+.wrapper .yearly-targets .target-row .details .progress > span {
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: 1.5s; /* increase js */
+}
+
+/* change the backgroundColor of the Line of every part */
+.wrapper .yearly-targets .target-row .details .progress > span.blue {
+  background-color: var(--blue-color);
+}
+
+.wrapper .yearly-targets .target-row .details .progress > span.orange {
+  background-color: var(--orange-color);
+}
+
+.wrapper .yearly-targets .target-row .details .progress > span.green {
+  background-color: var(--green-color);
+}
+
+/* span li wsst direct span */
+.wrapper .yearly-targets .target-row .details .progress > span span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  transition: 1.5s; /* increase js */
+}
+
+/* change the background color of every part */
+.wrapper .yearly-targets .target-row .details .progress > span.blue span {
+  background-color: var(--blue-color);
+  display: none;
+}
+
+.wrapper .yearly-targets .target-row .details .progress > span.orange span {
+  background-color: var(--orange-color);
+  display: none;
+}
+
+.wrapper .yearly-targets .target-row .details .progress > span.green span {
+  background-color: var(--green-color);
+  display: none;
+}
+
+.wrapper .yearly-targets .target-row .details .progress > span span::after {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  bottom: -10px;
+  border-top-color: var(--blue-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* change the arrow color of every part */
+.wrapper .yearly-targets .target-row .details .progress > .blue span::after {
+  border-top-color: var(--blue-color);
+}
+
+.wrapper .yearly-targets .target-row .details .progress > .orange span::after {
+  border-top-color: var(--orange-color);
+}
+
+.wrapper .yearly-targets .target-row .details .progress > .green span::after {
+  border-top-color: var(--green-color);
+}
+
+/* change the i's color of (money, projects, team) */
+.wrapper .yearly-targets .money-blue i {
+  color: var(--blue-color);
+}
+
+.wrapper .yearly-targets .projects-orange i {
+  color: var(--orange-color);
+}
+
+.wrapper .yearly-targets .team-green i {
+  color: var(--green-color);
+}
+
+.wrapper .yearly-targets .money-blue .icon,
+.wrapper .yearly-targets .money-blue .progress {
+  /* blue color BUT with 0.2 */
+  background-color: rgba(0, 119, 255, 0.2);
+}
+
+.wrapper .yearly-targets .projects-orange .icon,
+.wrapper .yearly-targets .projects-orange .progress {
+  /* orange color BUT with 0.2 */
+  background-color: rgba(245, 159, 11, 0.2);
+}
+
+.wrapper .yearly-targets .team-green .icon,
+.wrapper .yearly-targets .team-green .progress {
+  /* green color BUT with 0.2 */
+  background-color: rgba(34, 197, 94, 0.2);
+}
+
+/* End Yearly Targets */
+
+/* * ---------------------------- * */
+
+/* Start Tickets Stats */
+
+/* End Tickets Stats */
+
+/* * ---------------------------- * */
+
+/*  End Wrapper */
 
 /* End Page */
+
+/* * ---------------------------- * */
+
+/* Start Scrolling Button */
+
+#scrollBttn {
+  background: linear-gradient(to right, #e1dceb 50%, #fff 50%) no-repeat scroll
+    right bottom/210% 100% var(--grey-color);
+  padding: 10px 8px;
+  position: fixed;
+  bottom: 10px;
+  right: -40px; /* ! -40px */
+  border: none;
+  border-top: 4px solid rgb(158, 157, 157);
+  border-bottom: 4px solid rgb(78, 153, 175);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  z-index: 99;
+}
+
+#scrollBttn i {
+  color: black;
+}
+
+#scrollBttn:hover {
+  background-position: left bottom;
+  border-bottom: 4px solid rgb(61, 115, 131);
+  border-top: 4px solid rgb(100, 100, 100);
+}
+
+/* create a class to add it to the scrolling button */
+#scrollBttn.show {
+  right: 20px;
+}
+
+/* End Scrolling Button */
