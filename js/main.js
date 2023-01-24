@@ -1,4 +1,4 @@
-let userImage = document.getElementById("userImage");
+// let userImage = document.getElementById("userImage");
 // console.log(userImage);
 
 // userImage.onclick = () => (window.location.href = "/profile.html");
@@ -12,7 +12,6 @@ let scrollingButton = document.getElementById("scrollBttn");
 let lineSpans = document.querySelectorAll(
   ".wrapper .yearly-targets .target-row .details .progress .first-span"
 );
-
 let numberSpans = document.querySelectorAll(
   ".wrapper .yearly-targets .target-row .details .progress span span"
 );
