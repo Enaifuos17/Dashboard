@@ -53,6 +53,7 @@ function increaseTargets() {
   }
 }
 
+// * ----------------------------------------------------------------------------------------
 // * onscroll
 
 window.onscroll = function () {
@@ -87,3 +88,24 @@ window.onscroll = function () {
     });
   };
 };
+
+// * ----------------------------------------------------------------------------------------
+
+// ? ****************************************************************************************
+
+// * ----------------------------------------------------------------------------------------
+// * -------------------- delete tasks
+
+let taskRow = document.querySelectorAll(".wrapper .latest-tasks .task-row");
+
+let iDelete = document.querySelectorAll(
+  ".wrapper .latest-tasks .task-row i.delete"
+);
+
+for (let index = 0; index < iDelete.length; index++) {
+  iDelete[index].onclick = function () {
+    taskRow[index].classList.toggle("done");
+  };
+}
+
+// * ----------------------------------------------------------------------------------------

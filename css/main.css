@@ -820,6 +820,83 @@ ul {
 
 /* * ---------------------------- * */
 
+/* Start Latest Tasks */
+
+.wrapper .latest-tasks {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .latest-tasks h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper .latest-tasks .task-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .latest-tasks .task-row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* task-row li deja DONE */
+.wrapper .latest-tasks .task-row.done {
+  opacity: 0.3;
+}
+
+.wrapper .latest-tasks .task-row.done h3,
+.wrapper .latest-tasks .task-row.done p {
+  text-decoration: line-through;
+}
+
+.wrapper .latest-tasks .task-row .info {
+  flex-grow: 1; /* take the left space (until the next element) */
+}
+
+.wrapper .latest-tasks .task-row .info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.wrapper .latest-tasks .task-row .info p {
+  margin: 0;
+  color: var(--grey-color);
+}
+
+/* * ---------- * */
+@media (max-width: 767px) {
+  .wrapper .latest-tasks .task-row .info p {
+    font-size: 15px;
+  }
+}
+/* * ---------- * */
+
+.wrapper .latest-tasks .task-row i.delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wrapper .latest-tasks .task-row i.delete:hover {
+  color: var(--red-color);
+}
+
+/* End Latest Tasks */
+
+/* * ---------------------------- * */
+
+/* Start Top Search */
+
+/* End Top Search */
+
+/* * ---------------------------- * */
+
 /*  End Wrapper */
 
 /* End Page */
