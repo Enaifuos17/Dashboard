@@ -295,6 +295,8 @@ ul {
   gap: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  /* * */
+  margin-bottom: 20px;
 }
 
 /* Start Welcome */
@@ -893,7 +895,111 @@ ul {
 
 /* Start Top Search */
 
+.wrapper .top-search {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .top-search h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper .top-search .items-head {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-color);
+  margin-bottom: 10px;
+}
+
+.wrapper .top-search .items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.wrapper .top-search .items span:first-of-type {
+  font-weight: 500;
+}
+
+.wrapper .top-search .items span:not(:first-of-type) {
+  background-color: #eee;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
 /* End Top Search */
+
+/* * ---------------------------- * */
+
+/* Start Latest Uploads */
+
+.wrapper .latest-uploads {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .latest-uploads h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper .latest-uploads ul {
+  margin: 0;
+}
+
+.wrapper .latest-uploads ul li {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper .latest-uploads ul li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.wrapper .latest-uploads ul li div.img-info {
+  /* border: 1px solid purple; */
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .latest-uploads ul li div.img-info img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.wrapper .latest-uploads ul li div.info span:first-of-type {
+  display: block;
+}
+
+.wrapper .latest-uploads ul li div.info span:not(:first-of-type) {
+  font-size: 15px;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+.wrapper .latest-uploads ul li div.label {
+  background-color: #eee;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* End Latest Uploads */
+
+/* * ---------------------------- * */
+
+/* Start Progress */
+/* End Progress */
 
 /* * ---------------------------- * */
 
@@ -933,7 +1039,8 @@ ul {
 
 /* create a class to add it to the scrolling button */
 #scrollBttn.show {
-  right: 20px;
+  right: 10px;
+  /* 20 px */
 }
 
 /* End Scrolling Button */
