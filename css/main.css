@@ -1077,15 +1077,197 @@ ul {
   opacity: 0.3;
 }
 
+/* * ---------- */
 @media (max-width: 767px) {
   .wrapper .last-progress img.launch-image {
     width: 80px;
     opacity: 0.3;
   }
 }
+/* * ---------- */
 
 /* End Progress */
 
+/* * ---------------------------- * */
+
+/* Start Reminders */
+
+.wrapper .reminders {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .reminders h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper .reminders ul {
+  /* border: 1px solid red; */
+  margin: 0;
+}
+
+.wrapper .reminders ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.wrapper .reminders ul li span.color {
+  display: block;
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  transform: scale(0.6);
+  animation: size-increment 1s infinite alternate;
+}
+
+/* * animation ----------- */
+@keyframes size-increment {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* * ----------- */
+
+.wrapper .reminders ul li span.color.blue {
+  background-color: var(--blue-color);
+}
+
+.wrapper .reminders ul li span.color.green {
+  background-color: var(--green-color);
+  animation-delay: 0.3s;
+}
+
+.wrapper .reminders ul li span.color.orange {
+  background-color: var(--orange-color);
+  animation-delay: 0.6s;
+}
+
+.wrapper .reminders ul li span.color.red {
+  background-color: var(--red-color);
+  animation-delay: 0.9s;
+}
+
+.wrapper .reminders ul li span.color.grey {
+  background-color: var(--grey-color);
+  animation-delay: 1.2s;
+}
+
+.wrapper .reminders ul li div {
+  padding-left: 15px;
+}
+
+.wrapper .reminders ul li div.blue {
+  border-left: 2px solid var(--blue-color);
+}
+
+.wrapper .reminders ul li div.green {
+  border-left: 2px solid var(--green-color);
+}
+
+.wrapper .reminders ul li div.orange {
+  border-left: 2px solid var(--orange-color);
+}
+
+.wrapper .reminders ul li div.red {
+  border-left: 2px solid var(--red-color);
+}
+
+.wrapper .reminders ul li div.grey {
+  border-left: 2px solid var(--grey-color);
+}
+
+.wrapper .reminders ul li div p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.wrapper .reminders ul li div span {
+  font-size: 13px;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+/* End Reminders */
+
+/* * ---------------------------- * */
+
+/* Start Latest Post */
+
+.wrapper .latest-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.wrapper .latest-post h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper .latest-post div.top {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .latest-post div img.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.wrapper .latest-post div .info span.name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.wrapper .latest-post div .info span.time {
+  color: var(--grey-color);
+  font-size: 15px;
+}
+
+.wrapper .latest-post div.post-content {
+  /* border: 1px solid red; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  line-height: 1.7;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  min-height: 140px;
+}
+
+/* * ---------- */
+@media (max-width: 767px) {
+  .wrapper .latest-post div.post-content {
+    text-align: center;
+  }
+}
+/* * ---------- */
+
+.wrapper .latest-post div.post-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--grey-color);
+}
+
+/* End Latest Post */
+
+/* * ---------------------------- * */
 /* * ---------------------------- * */
 
 /*  End Wrapper */
