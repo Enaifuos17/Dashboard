@@ -1096,6 +1096,7 @@ ul {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  position: relative;
 }
 
 .wrapper .reminders h2 {
@@ -1268,6 +1269,117 @@ ul {
 /* End Latest Post */
 
 /* * ---------------------------- * */
+
+/* Start Social Media */
+
+.wrapper .social-media {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.wrapper .social-media h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper .social-media .box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  padding-left: 70px;
+  border-radius: 6px;
+}
+
+.wrapper .social-media .box.twitter {
+  background-color: rgb(29 160 242 / 20%);
+  color: #1da1f2;
+}
+
+.wrapper .social-media .box.facebook {
+  background-color: rgb(24 119 242 / 20%);
+  color: #1877f2;
+}
+
+.wrapper .social-media .box.youtube {
+  background-color: rgb(255 0 0 / 20%);
+  color: #ff0000;
+}
+
+.wrapper .social-media .box.linkedin {
+  background-color: rgb(0 119 181 / 20%);
+  color: #0077b5;
+}
+
+.wrapper .social-media .box i {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.wrapper .social-media .box i:hover {
+  transform: rotate(5deg);
+}
+
+.wrapper .social-media .box span {
+  font-weight: 500;
+}
+
+.wrapper .social-media .box a {
+  font-size: 13px;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.wrapper .social-media .box a:hover {
+  opacity: 1;
+}
+
+.wrapper .social-media .box.twitter i,
+.wrapper .social-media .box.twitter a {
+  background-color: #1da1f2;
+}
+
+.wrapper .social-media .box.facebook i,
+.wrapper .social-media .box.facebook a {
+  background-color: #1877f2;
+}
+
+.wrapper .social-media .box.youtube i,
+.wrapper .social-media .box.youtube a {
+  background-color: #ff0000;
+}
+
+.wrapper .social-media .box.linkedin i,
+.wrapper .social-media .box.linkedin a {
+  background-color: #0077b5;
+}
+
+/* ------- */
+@media (max-width: 767px) {
+  .wrapper .social-media .box span {
+    font-size: 13px;
+  }
+}
+/* ------- */
+
+/* End Social Media */
+
 /* * ---------------------------- * */
 
 /*  End Wrapper */
