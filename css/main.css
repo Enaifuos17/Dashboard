@@ -1380,9 +1380,102 @@ ul {
 
 /* End Social Media */
 
+/*  End Wrapper */
+
 /* * ---------------------------- * */
 
-/*  End Wrapper */
+/* Start Projects Table */
+
+.page .content .projects-table {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  /* margin 20px ==> hitsh madkhlash f wrraper */
+}
+
+.projects-table h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.projects-table .responsive-table {
+  overflow-x: auto;
+  /* bash ila table over width ==> we can SCROLL */
+}
+
+.projects-table .responsive-table table {
+  min-width: 1000px;
+  font-size: 15px;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.projects-table table thead td {
+  background-color: #eee;
+  font-weight: 600;
+}
+
+/* all TD */
+.projects-table table td {
+  padding: 15px;
+}
+
+.projects-table table tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.projects-table table tbody td:last-of-type {
+  border-right: 1px solid #eee;
+}
+
+.projects-table table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+
+.projects-table .responsive-table tbody img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.projects-table .responsive-table tbody img:not(:first-child) {
+  margin-left: -20px;
+}
+
+.projects-table .responsive-table tbody tr span {
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.projects-table .responsive-table tbody tr:nth-child(1) span {
+  background-color: var(--orange-color);
+}
+
+.projects-table .responsive-table tbody tr:nth-child(2) span {
+  background-color: var(--blue-color);
+}
+
+.projects-table .responsive-table tbody tr:nth-child(3) span,
+.projects-table .responsive-table tbody tr:nth-child(4) span,
+.projects-table .responsive-table tbody tr:nth-child(6) span {
+  background-color: var(--green-color);
+}
+
+.projects-table .responsive-table tbody tr:nth-child(5) span {
+  background-color: var(--red-color);
+}
+
+/* End Projects Table */
+
+/* * ---------------------------- * */
 
 /* End Page */
 
