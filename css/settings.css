@@ -1,0 +1,310 @@
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+
+/* * Start Settings Page */
+
+:root {
+  --bg-color: #f1f5f9;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+/* * Start CHECKBOX */
+
+.settings-page .toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  /* to hide the original shakl */
+}
+
+.settings-page .toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.settings-page .toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  /* to center the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+/* when its checked go to .toggle-swtich and change bgC */
+.settings-page .toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+
+/* when its checked go to .toggle-swtich::before and change icon, left, color */
+.settings-page .toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+
+/* * End CHECKBOX */
+
+/* * -------------------------------------------------------------- */
+/* * -------------------------------------------------------------- */
+
+.content h1 {
+  position: relative;
+}
+
+.content .settings-page {
+  border: 1px solid red;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+/* * ------------ */
+@media (max-width: 767px) {
+  .content .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* * ------------ */
+
+/* ----------------------------------- */
+
+/* Start Settings Box */
+
+.settings-page > div {
+  border: 1px solid black;
+}
+
+/* ----------------------------------- */
+
+/* Start Site Control */
+
+.settings-page .site-control {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.settings-page .site-control h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.settings-page .site-control > p {
+  color: var(--grey-color);
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.settings-page .site-control .info-checkbox {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-page .site-control .info-checkbox div.info span {
+  font-weight: 500;
+}
+
+.settings-page .site-control .info-checkbox div.info p {
+  color: var(--grey-color);
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.settings-page .site-control .text-area textarea {
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  min-height: 150px;
+}
+
+/* End Site Control */
+
+/* ----------------------------------- */
+
+/* Start General Info */
+
+.settings-page .general-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.general-info h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.general-info p {
+  color: var(--grey-color);
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.general-info div:not(:last-of-type) {
+  /* border: 1px solid green; */
+  margin-bottom: 15px;
+}
+
+.general-info div label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.general-info div input {
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.general-info div:last-of-type input {
+  display: inline-flex;
+  width: calc(100% - 80px);
+  margin-right: 10px;
+}
+
+.general-info div:last-of-type a {
+  color: var(--blue-color);
+  font-weight: 500;
+  transition: 0.1s;
+}
+
+.general-info div:last-of-type a:hover {
+  color: var(--blue-alt-color);
+}
+
+.disable {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+
+/* End General Info */
+
+/* ----------------------------------- */
+
+/* Start Security Info */
+
+.settings-page .security-info {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.security-info h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.security-info > p {
+  color: var(--grey-color);
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.security-info .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.security-info .box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.security-info .box .info {
+}
+
+.security-info .box .info span {
+  /* font-size: 15px; */
+  font-weight: 500;
+}
+
+.security-info .box .info p {
+  font-size: 13px;
+  color: var(--grey-color);
+  font-weight: 500;
+  margin: 5px 0 13px;
+}
+
+.security-info .box a.change-button,
+.security-info .box a.device-button {
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.security-info .box a.change-button {
+  background-color: var(--blue-color);
+  color: #fff;
+}
+
+.security-info .box a.device-button {
+  background-color: #d8d8d8;
+  color: black;
+}
+
+.security-info .box a.device-button:hover {
+  background-color: #bbbbbb;
+}
+
+.security-info .box a.change-button:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.security-info .box label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End Security Info */
+
+/* ----------------------------------- */
+
+/* End Settings Box */
+
+/* * End Settings Page */
