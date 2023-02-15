@@ -7,10 +7,18 @@ changeA.onclick = function () {
   emailInput.classList.toggle("disable");
   //
   if (changeA.textContent === "Change") {
-    emailInput.removeAttribute("disable");
+    emailInput.removeAttribute("disabled");
     changeA.textContent = "Save";
   } else {
     emailInput.setAttribute("disabled", "");
     changeA.textContent = "Change";
   }
+  //
+  // local storage
+  localStorage.setItem("inputValue", emailInput.value);
 };
+
+// to avoid the empty input
+if (localStorage.length !== 0) {
+  emailInput.value = localStorage.getItem("inputValue");
+}
