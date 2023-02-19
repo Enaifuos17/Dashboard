@@ -363,6 +363,93 @@
 
 /* ----------------------------------- */
 
+/* Start Widgets Control */
+
+.widgets-control {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.widgets-control h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.widgets-control p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.widgets-control .control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.widgets-control .control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* * custom */
+.widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+}
+
+.widgets-control .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px; /* half of height to centre it (height 18px) (u can do it with translateY)*/
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+.widgets-control .control label:hover::before {
+  border-color: var(--blue-color);
+}
+
+.widgets-control .control label::after {
+  content: "";
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px; /* or -9px (same as last method) */
+  background-color: var(--blue-color);
+  color: #fff;
+  /*  */
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  */
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.widgets-control .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+
+/* End Widgets Control */
+
 /* ----------------------------------- */
 
 /* End Settings Box */
