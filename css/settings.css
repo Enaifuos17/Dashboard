@@ -452,6 +452,132 @@
 
 /* ----------------------------------- */
 
+/* Start Backup Manager */
+
+.backup-manager {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.backup-manager h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.backup-manager p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.backup-manager .date {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* * custom RADIO */
+.backup-manager .date input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.backup-manager .date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+}
+
+.backup-manager .date label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -11px;
+  /* height => 18px + border => 2px (luf9 o t7t so + 4px) ===> 22px TOTAL */
+  left: 0;
+}
+
+.backup-manager .date label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  /* transform: translateY(-50%); */
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.backup-manager .date input[type="radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-manager .date input[type="radio"]:checked + label::after {
+  transform: scale(1);
+}
+
+.backup-manager .servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.backup-manager .servers input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.backup-manager .servers .server {
+  border: 2px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.backup-manager .servers .server label {
+  display: block;
+  margin: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.backup-manager .servers .server label i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.backup-manager .servers input[type="radio"]:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+
+/* * ------------ */
+@media (max-width: 767px) {
+  .backup-manager .servers {
+    flex-wrap: wrap;
+    /* OR flex direction => COLUMn */
+  }
+}
+
+/* End Backup Manager */
+
+/* ----------------------------------- */
+
 /* End Settings Box */
 
 /* * End Settings Page */
