@@ -1,0 +1,219 @@
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+
+/* * Start Settings Page */
+
+:root {
+  --bg-color: #f1f5f9;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+/* * Customize CHECKBOX */
+
+.profile-page .toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  /* to hide the original shakl */
+}
+
+.profile-page .toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  /* height: 32px; */
+  height: 20px;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.profile-page .toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-size: 8px;
+  font-weight: 900;
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  /* to center the icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+/* when its checked go to .toggle-swtich and change bgC */
+.profile-page .toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+
+/* when its checked go to .toggle-swtich::before and change icon, left, color */
+.profile-page .toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  font-size: 8px;
+  left: 62px;
+  color: var(--blue-color);
+}
+
+/* * End CHECKBOX */
+
+/* * -------------------------------- */
+
+.profile-page {
+  border: 1px solid red;
+  margin: 20px;
+}
+
+/* Start Overview */
+
+.profile-page .overview {
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+/* * -------------- */
+@media (max-width: 767px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+}
+/* * -------------- */
+
+/* Avatar Box */
+
+.overview .avatar-box {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* * -------------- */
+@media (min-width: 768px) {
+  .overview .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+/* * -------------- */
+
+.overview .avatar-box > img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.overview .avatar-box h3 {
+  margin: 0;
+}
+
+.overview .avatar-box > p {
+  color: var(--grey-color);
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.overview .avatar-box .level {
+  border-radius: 6px;
+  background-color: #eee; /* #eee */
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+
+.overview .avatar-box .level span {
+  position: absolute;
+  background-color: var(--blue-color);
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.overview .avatar-box .rating {
+  /* border: 1px solid orange; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.overview .avatar-box .rating i {
+  color: var(--orange-color);
+  font-size: 13px;
+}
+
+.overview .avatar-box p.rating-number {
+  color: var(--grey-color);
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Info Box */
+
+.overview .infos-box {
+  width: 100%;
+}
+
+.overview .infos-box .box {
+  /* border: 1px solid red; */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.overview .infos-box .box:hover {
+  background-color: #f9f9f9;
+}
+
+.overview .infos-box .box h4 {
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+  width: 100%;
+  /* 100% bash mnin ndiru wrap f .box yjiw l3ibat lakhrin t7t */
+}
+
+.overview .infos-box .box > div {
+  /* border: 1px solid blue; */
+  font-size: 14px;
+  /*  */
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+
+.overview .infos-box .box div.last-one {
+  padding: 0;
+}
+
+/* * ---------- */
+@media (max-width: 767px) {
+  .overview .infos-box .box > div {
+    min-width: auto;
+  }
+}
+/* * ---------- */
+
+.overview .infos-box .box div span.one {
+  color: var(--grey-color);
+}

@@ -4,9 +4,244 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/profile.css" />
     <title>Profile</title>
+    <!-- OpenSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/profile.png" />
   </head>
   <body>
-    <h1>Hello from PROFILE</h1>
+    <div class="page">
+      <!-- Start Sidebar -->
+      <div class="sidebar">
+        <h3>Usrnm</h3>
+        <ul>
+          <!-- 1 li -->
+          <li>
+            <a class="" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <!-- 2 li -->
+          <li>
+            <a class="" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <!-- 3 li -->
+          <li>
+            <a class="active" href="profile.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <!-- 4 li -->
+          <li>
+            <a class="" href="index.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <!-- 5 li -->
+          <li>
+            <a class="" href="index.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <!-- 6 li -->
+          <li>
+            <a class="" href="index.html">
+              <i class="fa-solid fa-users fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <!-- 7 li -->
+          <li>
+            <a class="" href="index.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <!-- 8 li -->
+          <li>
+            <a class="" href="index.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End sidebar -->
+      <!-- ----- ----- ----- ----- ----- ----- ----- -->
+      <!-- Start Content -->
+      <div class="content">
+        <!-- Start Head -->
+        <div class="head">
+          <div class="search">
+            <input type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons">
+            <span class="notification">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <a href="index.html">
+              <img
+                title="Home"
+                style="display: flex"
+                src="images/user1.png"
+                id="userImage"
+                alt="userPic"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- End Head -->
+        <!-- * ----------------- * -->
+        <!-- h1 title -->
+        <h1>Profile</h1>
+        <!-- * ----------------- * -->
+        <div class="profile-page">
+          <!-- * ----------------- * -->
+          <!-- Start Main Table -->
+          <div class="overview">
+            <!-- * avatar -->
+            <div class="avatar-box">
+              <img src="images/user1.png" alt="" />
+              <h3>User Name</h3>
+              <p>Level 17</p>
+              <!-- level -->
+              <div class="level">
+                <span style="width: 70%"></span>
+              </div>
+              <!-- rating -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="rating-number">450 Rating</p>
+            </div>
+            <!-- * infos -->
+            <div class="infos-box">
+              <!-- * 1 -->
+              <div class="box">
+                <h4>General Information</h4>
+                <div>
+                  <span class="one">Full Name</span>
+                  <span class="two">User Name</span>
+                </div>
+                <div>
+                  <span class="one">Gender:</span>
+                  <span class="two">Male</span>
+                </div>
+                <div>
+                  <span class="one">Country:</span>
+                  <span class="two">USA</span>
+                </div>
+                <div class="last-one">
+                  <label>
+                    <input type="checkbox" class="toggle-checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- * 2 -->
+              <div class="box">
+                <h4>Personal Information</h4>
+                <div>
+                  <span class="one">Email:</span>
+                  <span class="two">o@nn.sa</span>
+                </div>
+                <div>
+                  <span class="one">Phone:</span>
+                  <span class="two">019123456789</span>
+                </div>
+                <div>
+                  <span class="one">Date Of Birth:</span>
+                  <span class="two">25/10/1982</span>
+                </div>
+                <div class="last-one">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- * 3 -->
+              <div class="box">
+                <h4>Job Information</h4>
+                <div>
+                  <span class="one">Title:</span>
+                  <span class="two">Full Stack Developer</span>
+                </div>
+                <div>
+                  <span class="one">Programming Language:</span>
+                  <span class="two">Python</span>
+                </div>
+                <div>
+                  <span class="one">Years Of Experience:</span>
+                  <span class="two">15+</span>
+                </div>
+                <div class="last-one">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- * 4 -->
+              <div class="box">
+                <h4>Billing Information</h4>
+                <div>
+                  <span class="one">Payment Method:</span>
+                  <span class="two">Paypal</span>
+                </div>
+                <div>
+                  <span class="one">Email:</span>
+                  <span class="two">email@website.com</span>
+                </div>
+                <div>
+                  <span class="one">Subscription:</span>
+                  <span class="two">Monthly</span>
+                </div>
+                <div class="last-one">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Main Table -->
+          <!-- * ----------------- * -->
+        </div>
+      </div>
+      <!-- End Content -->
+    </div>
+    <!-- ----- ----- ----- ----- ----- ----- ----- -->
+    <!-- Start Scrolling Button -->
+    <button id="scrollBttn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- End Scrolling Button -->
+    <!-- -->
+    <script src="js/main.js"></script>
   </body>
 </html>
+<!-- 
+  * notes: 
+
+-->
