@@ -217,3 +217,179 @@
 .overview .infos-box .box div span.one {
   color: var(--grey-color);
 }
+
+/* End Overview */
+
+/* * -------------------- */
+
+/* Start Other Data */
+
+.other-data {
+  display: flex;
+  gap: 20px;
+}
+
+/* * ------------ */
+@media (max-width: 767px) {
+  .other-data {
+    flex-direction: column;
+  }
+}
+/* * ------------ */
+
+/* Skills */
+
+.other-data .skills {
+  border: 1px solid blue;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  /*  */
+  flex-grow: 1;
+}
+
+.other-data .skills h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.other-data .skills p {
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.other-data .skills ul {
+  margin: 0;
+}
+
+/* * ----------- */
+@media (max-width: 767px) {
+  .other-data .skills ul {
+    text-align: center;
+  }
+}
+/* * ----------- */
+
+.other-data .skills ul li {
+  padding: 15px 0;
+}
+
+.other-data .skills ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.other-data .skills ul li span {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.other-data .skills ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* Activities */
+
+.other-data .activities {
+  border: 1px solid red;
+  border: 1px solid blue;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  /*  */
+  flex-grow: 2;
+}
+
+.other-data .activities h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.other-data .activities p {
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.other-data .activities .activity {
+  display: flex;
+  align-items: center;
+}
+
+.other-data .activities .activity:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* * ----------- */
+@media (max-width: 767px) {
+  .other-data .activities .activity {
+    text-align: center;
+  }
+}
+/* * ----------- */
+
+.other-data .activities .activity img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.other-data .activities .activity .info span.name {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.other-data .activities .activity .info span.descr {
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+.other-data .activities .activity .date span.time {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.other-data .activities .activity .date span.day {
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+/* * ----------- */
+@media (min-width: 768px) {
+  .other-data .activities .activity .date {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+/* * ----------- */
+
+/* * ----------- */
+@media (max-width: 767px) {
+  .other-data .activities .activity {
+    flex-direction: column;
+  }
+
+  .other-data .activities .activity img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .other-data .activities .activity .date {
+    margin-top: 15px;
+  }
+}
+/* * ----------- */
+
+/* End Other Data */
