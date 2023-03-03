@@ -1,0 +1,197 @@
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+/* * ############################################################################### */
+
+/* * Start Settings Page */
+
+:root {
+  --bg-color: #f1f5f9;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+/* * ---------------------- */
+
+.projects-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+
+/* * ---- */
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* * ---- */
+
+.projects-page .project {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  position: relative;
+}
+
+.project span.date {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--grey-color);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.project h4 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.project p {
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* team */
+
+.project .team {
+  position: relative;
+  min-height: 80px;
+}
+
+.project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.project .team a:nth-child(2) {
+  left: 25px;
+}
+
+.project .team a:nth-child(3) {
+  left: 50px;
+}
+
+.project .team a:nth-child(4) {
+  left: 75px;
+}
+
+.project .team a:nth-child(5) {
+  left: 100px;
+}
+
+.project .team a:hover {
+  z-index: 999;
+}
+
+.project .team a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* tags */
+
+.project .tags {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+/* * ---- */
+@media (max-width: 767px) {
+  .project .tags {
+    flex-direction: column;
+  }
+}
+/* * ---- */
+
+.project .tags span {
+  font-size: 13px;
+  border-radius: 6px;
+  background-color: #eee;
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+
+/* * ---- */
+@media (max-width: 767px) {
+  .project .tags span:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+/* * ---- */
+
+/* infos */
+
+.project .infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 15px;
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* * ---- */
+@media (max-width: 767px) {
+  .project .infos {
+    flex-direction: column;
+  }
+}
+/* * ---- */
+
+.project .infos .prog {
+  height: 8px;
+  width: 260px;
+  background-color: #eee;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* * ---- */
+@media (max-width: 767px) {
+  .project .infos .prog {
+    margin: 10px;
+  }
+}
+/* * ---- */
+
+.project .infos .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.project .infos .prog span.red {
+  background-color: var(--red-color);
+}
+
+.project .infos .prog span.green {
+  background-color: var(--green-color);
+}
+
+.project .infos .prog span.blue {
+  background-color: var(--blue-color);
+}
