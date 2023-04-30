@@ -285,11 +285,10 @@ ul {
 /* Start Wrapper ==> Welcome + Quick Draft + Yearly Targets +  */
 
 .content .wrapper > div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .content .wrapper {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;

@@ -73,14 +73,12 @@
 /* * -------------------------------- */
 
 .profile-page {
-  border: 1px solid red;
   margin: 20px;
 }
 
 /* Start Overview */
 
 .profile-page .overview {
-  border: 1px solid blue;
   border-radius: 10px;
   background-color: #fff;
   display: flex;
@@ -240,7 +238,6 @@
 /* Skills */
 
 .other-data .skills {
-  border: 1px solid blue;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -298,8 +295,6 @@
 /* Activities */
 
 .other-data .activities {
-  border: 1px solid red;
-  border: 1px solid blue;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;

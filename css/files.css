@@ -19,7 +19,6 @@
 /* * ---------------------- */
 
 .files-page {
-  border: 1px solid red;
   display: flex;
   margin: 20px;
   gap: 20px;
@@ -40,7 +39,6 @@
 /* * STATS */
 
 .files-page .files-stats {
-  border: 1px solid blue;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -213,7 +211,7 @@
 }
 
 .files-content .file {
-  border: 1px solid green;
+  border: 1px solid #eee;
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;

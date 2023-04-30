@@ -17,3 +17,179 @@
 }
 
 /* * ---------------------- */
+
+.plans-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+
+/* * ----- */
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* * ----- */
+
+.plans-page .plan {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.plan .top {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #fff;
+  outline: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.plan.green .top {
+  background-color: var(--green-color);
+  outline-color: #008000;
+}
+
+.plan.blue .top {
+  background-color: var(--blue-color);
+  outline-color: #0000cd;
+}
+
+.plan.orange .top {
+  background-color: var(--orange-color);
+  outline-color: #e47e02;
+}
+
+.plan .top h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.plan .top .price {
+  color: #fff;
+  position: relative;
+  font-size: 40px;
+  width: fit-content;
+  margin: auto;
+}
+
+.plan .top .price span {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 25px;
+}
+
+.plan ul {
+  padding: 0;
+  list-style: none;
+}
+
+.plan ul li {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.plan ul li i:first-child {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.plan ul li i.yes {
+  color: var(--green-color);
+}
+
+.plan ul li i.help {
+  color: var(--grey-color);
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.plan ul li i.help:hover {
+  color: #000;
+}
+
+.plan ul li i:not(.yes, .help) {
+  color: var(--red-color);
+}
+
+.plan a {
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  width: fit-content;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: cursive;
+  font-size: 13px;
+}
+
+.plan ul span {
+  font-weight: 500;
+}
+
+.plan.green a {
+  background-color: var(--green-color);
+  transition: 0.3s;
+}
+.plan.green a:hover {
+  background-color: #008000;
+}
+
+.plan.blue a {
+  background-color: var(--blue-color);
+  transition: 0.3s;
+}
+.plan.blue a:hover {
+  background-color: #0000cd;
+}
+
+.plan.orange a {
+  background-color: var(--orange-color);
+  transition: 0.3s;
+}
+.plan.orange a:hover {
+  background-color: #e47e02;
+}
+
+.plan p.current-plan {
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+  color: var(--blue-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+
+.plan.green p.current-plan {
+  color: var(--green-color);
+}
+
+.plan.blue p.current-plan {
+  color: var(--blue-color);
+}
+
+.plan.orange p.current-plan {
+  color: var(--orange-color);
+}
+
+.plan.blue a {
+  display: none;
+}
+.plan.green p.current-plan {
+  display: none;
+}
+.plan.plan.orange p.current-plan {
+  display: none;
+}

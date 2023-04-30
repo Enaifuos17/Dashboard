@@ -75,7 +75,6 @@
 }
 
 .content .settings-page {
-  border: 1px solid red;
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -97,7 +96,7 @@
 /* Start Settings Box */
 
 .settings-page > div {
-  border: 1px solid black;
+  /* border: 1px solid #000; */
 }
 
 /* ----------------------------------- */
